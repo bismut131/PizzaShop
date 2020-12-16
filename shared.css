@@ -9,6 +9,15 @@ body {
     margin: 0;
 }
 
+main {
+    grid-row: 2 / 3;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 3.2rem auto 8rem;
+}
+
 .main-header {
     width: 100%;
     position: fixed;
@@ -16,7 +25,7 @@ body {
     left: 0;
     z-index: 102;
     background-color: rgb(58, 56, 56);
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -40,7 +49,7 @@ body {
     display: block;
     width: 100%;
     background-color: rgb(58, 56, 56);
-    height: 0.2rem;
+    height: 0.1rem;
     margin: 0.6rem 0;
 }
 
@@ -73,9 +82,10 @@ body {
     border-bottom: 3px solid white;
 }
 
-@media (min-width: 41rem) {
+@media (min-width: 42.5rem) {
     .main-header{
         justify-content: center;
+        padding: 1rem 1.5rem;
     }
 
     .toggle-button {
@@ -115,4 +125,9 @@ body {
 
 .open {
     display: block;
+}
+
+.main-footer {
+    grid-row: 3 / 4;
+    background-color: rgb(58, 56, 56);
 }
