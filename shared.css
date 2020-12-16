@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 * {
     box-sizing: border-box;
@@ -15,7 +16,7 @@ main {
 
 .grid-container {
     display: grid;
-    grid-template-rows: 3.2rem auto 8rem;
+    grid-template-rows: 3.2rem auto auto;
 }
 
 .main-header {
@@ -95,6 +96,19 @@ main {
     .main-nav {
         display: flex;
     }
+
+    .main-footer__first-section {
+        display: flex;
+        margin: 1rem auto;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 50%;
+    }
+
+    .main-footer__info {
+        text-align: left;
+    }
+    
 }
 
 .mobile-nav {
@@ -128,6 +142,37 @@ main {
 }
 
 .main-footer {
+    width: 100%;
+    padding: 2rem;
     grid-row: 3 / 4;
     background-color: rgb(58, 56, 56);
+    text-align: center;
+    font-family: "Anton";
+    color: white;
+}
+
+.main-footer__title {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    font-size: 3rem;
+}
+
+
+/* .main-footer__first-section {
+    display: flex;
+    margin: 1rem auto;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+} */
+
+.main-footer__info {
+    /* text-align: left; */
+    font-size: 1rem;
+}
+
+.main-footer-contact a {
+    text-decoration: none;
+    color: white;
 }
