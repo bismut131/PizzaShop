@@ -33,8 +33,23 @@
     border-color: white;
     font-family: "Anton";
     padding: 0.5rem 1rem;
+    cursor: pointer;
 }
 
 .order:hover, .order:active {
-    background-color: rgb(58, 56, 56);
+    /* background-color: rgb(58, 56, 56); */
+    animation: moveup 0.4s ease-out forwards;
+}
+
+.order:focus {
+    outline:none;
+}
+
+@keyframes moveup {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-1rem);
+    }
 }
