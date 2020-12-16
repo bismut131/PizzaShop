@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 * {
     box-sizing: border-box;
@@ -9,6 +10,15 @@ body {
     margin: 0;
 }
 
+main {
+    grid-row: 2 / 3;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 3.2rem auto auto;
+}
+
 .main-header {
     width: 100%;
     position: fixed;
@@ -16,7 +26,7 @@ body {
     left: 0;
     z-index: 102;
     background-color: rgb(58, 56, 56);
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1.5rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -40,7 +50,7 @@ body {
     display: block;
     width: 100%;
     background-color: rgb(58, 56, 56);
-    height: 0.2rem;
+    height: 0.1rem;
     margin: 0.6rem 0;
 }
 
@@ -73,9 +83,10 @@ body {
     border-bottom: 3px solid white;
 }
 
-@media (min-width: 41rem) {
+@media (min-width: 42.5rem) {
     .main-header{
         justify-content: center;
+        padding: 1rem 1.5rem;
     }
 
     .toggle-button {
@@ -85,6 +96,19 @@ body {
     .main-nav {
         display: flex;
     }
+
+    .main-footer__first-section {
+        display: flex;
+        margin: 1rem auto;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 50%;
+    }
+
+    .main-footer__info {
+        text-align: left;
+    }
+    
 }
 
 .mobile-nav {
@@ -115,4 +139,40 @@ body {
 
 .open {
     display: block;
+}
+
+.main-footer {
+    width: 100%;
+    padding: 2rem;
+    grid-row: 3 / 4;
+    background-color: rgb(58, 56, 56);
+    text-align: center;
+    font-family: "Anton";
+    color: white;
+}
+
+.main-footer__title {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    font-size: 3rem;
+}
+
+
+/* .main-footer__first-section {
+    display: flex;
+    margin: 1rem auto;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+} */
+
+.main-footer__info {
+    /* text-align: left; */
+    font-size: 1rem;
+}
+
+.main-footer-contact a {
+    text-decoration: none;
+    color: white;
 }
