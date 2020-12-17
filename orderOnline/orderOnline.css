@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 .order-online-products {
     display: grid;
     justify-items: center;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto 15rem 15rem;
+    grid-template-rows: auto auto 15rem;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
     padding: 2rem;
 }
 
@@ -16,6 +21,7 @@
 .order-online-product-figure {
     width: 70%;
     height: 70%;
+    margin: auto;
 }
 
 .order-online-product img {
@@ -28,6 +34,10 @@
     background-color: rgb(58, 56, 56);
     color: white;
     border-radius: 1rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-family: "Anton";
+    padding: 0.5rem;
 }
 
 .order-online-product-add-card:hover,
@@ -35,4 +45,6 @@
     background-color: white;
     color: rgb(58, 56, 56);
 }
+
+
 

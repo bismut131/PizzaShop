@@ -8,10 +8,13 @@ xhr.onload = function () {
 
     var newContent = "";
     for (var i = 0; i < responseObject.products.length; i++) {
-        newContent += '<figure class="product">'
+        newContent += '<article class="order-online-product">'
+        newContent += '<figure class="order-online-product-figure">'
         newContent += '<img src="' + responseObject.products[i].img + '" />';
         newContent += '<figcaption>' + responseObject.products[i].description + '</figcaption>'
         newContent += '</figure>'
+        newContent += '<button class="order-online-product-add-card">' + 'Add to card' + '</button>'
+        newContent += '</article>'
     }
 
     document.getElementsByClassName('order-online-products')[0].innerHTML = newContent;
