@@ -1,0 +1,6 @@
+.order-online-products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 12rem 12rem 12rem;
+    padding: 2rem;
+}

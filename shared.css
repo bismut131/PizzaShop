@@ -169,7 +169,7 @@ main {
         margin: 1rem auto;
         flex-direction: row;
         justify-content: space-between;
-        width: 40%;
+        width: 50%;
     }
 
     .main-footer__info {
