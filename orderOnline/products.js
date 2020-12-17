@@ -1,19 +1,22 @@
 
+var xhr = new XMLHttpRequest();
 
-// document.getElementsByClassName('.order-online-products').innerHTML = 'muko';
 
-// var xhr = new XMLHttpRequest;
+xhr.onload = function () {
+    
+    responseObject = JSON.parse(xhr.responseText);
 
-// xhr.onload = function () {
-//     responseObject = JSON.parse(xhr.responseText);
-// }
+    var newContent = "";
+    for (var i = 0; i < responseObject.products.length; i++) {
+        newContent += '<figure class="product">'
+        newContent += '<img src="' + responseObject.products[i].img + '" />';
+        newContent += '<figcaption>' + responseObject.products[i].description + '</figcaption>'
+        newContent += '</figure>'
+    }
 
-// var newContent = "";
-// for(var i = 0; i < responseObject.products.length; i++){
-//     newContent += '<article class="product">'
-//     newContent += '<img src="' + responseObject.products[i].img +'" />';
-//     newContent +=  '<p>' + responseObject.products[i].description + '</p>'
-//     newContent += '</article>'
-// }
-// xhr.open('GET', 'products.json', true);
-// xhr.send(null);
+    document.getElementsByClassName('order-online-products')[0].innerHTML = newContent;
+
+}
+
+xhr.open('GET', 'products.json', true);
+xhr.send(null);

@@ -1,6 +1,38 @@
 .order-online-products {
     display: grid;
+    justify-items: center;
+    align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 12rem 12rem 12rem;
+    grid-template-rows: auto 15rem 15rem;
     padding: 2rem;
 }
+
+.order-online-product {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.order-online-product-figure {
+    width: 70%;
+    height: 70%;
+}
+
+.order-online-product img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.order-online-product-add-card {
+    background-color: rgb(58, 56, 56);
+    color: white;
+    border-radius: 1rem;
+}
+
+.order-online-product-add-card:hover,
+.order-online-product-add-card:active {
+    background-color: white;
+    color: rgb(58, 56, 56);
+}
+
