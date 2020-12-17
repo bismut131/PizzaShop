@@ -2,20 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 .order-online-products {
-    display: grid;
-    justify-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto 15rem;
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
     padding: 2rem;
 }
 
 .order-online-product {
-    padding: 0;
-    margin: 0;
+    padding: 1rem;
+    margin: 1rem;
     text-align: center;
+    width: 27rem;
 }
 
 .order-online-product-figure {
@@ -38,6 +38,7 @@
     font-size: 1rem;
     font-family: "Anton";
     padding: 0.5rem;
+    margin: 1rem;
 }
 
 .order-online-product-add-card:hover,
