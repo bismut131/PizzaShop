@@ -59,9 +59,18 @@
                 </li>
             </ul>
         </nav>
-        <main>
-         
-        </main id="reservation">
+        <main id="reservation">
+            <h1 class="reservation-title">MAKE A RESERVATION</h1>
+            <form class="reservation-form" action="get">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date">
+                <label for="time">Time</label>
+                <input type="time" name="time" id="time">
+                <label for="part-size">Party-size</label>
+                <input type="number" name="party-size" id="party-size">
+                <input type="submit" value="Book Now" id="reservation-submit">
+            </form>
+        </main>
         <footer class="main-footer">
             <h1 class="main-footer__title">COME GRAB A SLICE!</h1>
             <section class="main-footer__first-section">
@@ -78,16 +87,17 @@
                     </p>
                 </article>
                 <article id="loaction-hours" class="main-footer__location-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.5593770213322!2d41.62487931583577!3d41.64365467924144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40678612dccea6b1%3A0x121d9feefed23ba7!2s123%20Vakhtang%20Gorgasali%20St%2C%20Batumi%206010!5e0!3m2!1sen!2sge!4v1608143332914!5m2!1sen!2sge" 
-                    max-width="600" max-height="450" frameborder="0" style="border:0;" 
-                    allowfullscreen="" aria-hidden="false" tabindex="0">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.5593770213322!2d41.62487931583577!3d41.64365467924144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40678612dccea6b1%3A0x121d9feefed23ba7!2s123%20Vakhtang%20Gorgasali%20St%2C%20Batumi%206010!5e0!3m2!1sen!2sge!4v1608143332914!5m2!1sen!2sge"
+                        max-width="600" max-height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0">
                     </iframe>
                 </article>
             </section>
         </footer>
     </div>
-    <script src="jquery-1.11.0.js"></script>
-    <script src="shared.js"></script>
+    <script src="../jquery-1.11.0.js"></script>
+    <script src="../shared.js"></script>
 </body>
 
 </html>
