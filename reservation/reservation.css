@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat";
+}
+
+#reservation {
+    padding: 2rem;
+}
+
+.reservation-form {
+    padding: 1rem;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-rows: repeat(3,1.5rem 2.5rem) 4rem;
+    grid-row-gap: 2rem;
+    font-weight: bold;
+}
+
+.reservation-title {
+    font-family: "Anton";
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    color: rgb(58, 56, 56);
+}
+
+.reservation-form label,
+.reservation-form input {
+    display: block;
+    width: 100%;
+    color:  rgb(58, 56, 56);
+}
+
+.reservation-form label {
+    padding-top: 1rem;
+}
+
+.reservation-form input:not([type=submit]) {
+    border: 2px solid rgb(58, 56, 56);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: rgb(58, 56, 56);
+    color: white;
+}
+
+.reservation-form input:not([type=submit]):hover, 
+.reservation-form input:not([type=submit]):focus {
+    background-color: white;
+    color:  rgb(58, 56, 56);
+}
+
+.reservation-form [type=submit] {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgb(58, 56, 56);
+    border-radius: 1rem;
+}
+
+.reservation-form [type=submit]:hover,
+.reservation-form [type=submit]:active {
+    background-color: white;
+    color:rgb(58, 56, 56);
+}
+
+@media (min-width: 43rem) {
+    .reservation-form {
+        width: 30rem;
+        display: grid;
+        grid-template-columns: 7rem 1fr;
+        grid-template-rows: repeat(3,2.1rem) 3rem;
+        justify-content: center;
+    }
+    .reservation-form [type=submit] {
+        grid-column: 1/span 2;
+        width: 40%;
+        justify-self: center;
+    }
+
+}
