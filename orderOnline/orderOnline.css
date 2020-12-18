@@ -1,14 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+#order-online {
+    padding: 2rem;
+}
 
 .order-online-products {
     width: 100%;
+    max-width: 100rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-    padding: 2rem;
+    justify-content: center;
+    margin: auto;
+    
 }
 
 .order-online-product {
@@ -28,6 +39,10 @@
     width: 70%;
     height: 70%;
     object-fit: cover;
+}
+
+.order-online-product-name {
+    font-weight: 700;
 }
 
 .order-online-product-add-card {
