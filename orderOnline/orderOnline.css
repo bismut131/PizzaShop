@@ -12,6 +12,7 @@
 
 .order-online-products {
     width: 100%;
+    height: 100%;
     max-width: 100rem;
     display: flex;
     flex-direction: row;
@@ -29,6 +30,12 @@
     width: 27rem;
 }
 
+.order-online-product:hover,
+.order-online-product:active {
+    border: 2px solid rgb(58, 56, 56);
+    border-radius: 1rem;
+}
+
 .order-online-product-figure {
     width: 70%;
     height: 70%;
@@ -43,6 +50,7 @@
 
 .order-online-product-name {
     font-weight: 700;
+    height: 3rem;
 }
 
 .order-online-product-add-card {
