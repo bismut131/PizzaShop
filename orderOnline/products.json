@@ -6,44 +6,44 @@
         "description": "Pepperoni,Mozzarella and Marinara Sauce"
       },
       {
-        "img": "../images/rPapa-Ronny-g-e1594031058169.png",
-        "name": "Pappa Muko",
+        "img": "../images/rDriftin-g-e1594031096893.png",
+        "name": "Driftin",
+        "description": "Double Mozzarella, Smoked Ham, Mushrooms and Marinara Sauce"
+      },
+      {
+        "img": "../images/r4x4-g-e1594030734254.png",
+        "name": "4X4",
+        "description": "Mozzarella, Pepperoni, Homemade Italian Sausage"
+      },
+      {
+        "img": "../images/rSupreme-g-e1594031072302.png",
+        "name": "Supreme",
         "description": "Pepperoni,Mozzarella and Marinara Sauce"
       },
       {
-        "img": "../images/rPapa-Ronny-g-e1594031058169.png",
-        "name": "Pappa Muko",
-        "description": "Pepperoni,Mozzarella and Marinara Sauce"
+        "img": "../images/rHot-Rod-g-e1594030952548.png",
+        "name": "Hot Rod",
+        "description": "Mozzarella, Pepperoni, Tomato, Red Chili Flakes and Marinara Sauce"
       },
       {
-        "img": "../images/rPapa-Ronny-g-e1594031058169.png",
-        "name": "Pappa Muko",
-        "description": "Pepperoni,Mozzarella and Marinara Sauce"
+        "img": "../images/rCheesy-Veggie-g-e1594031107316.png",
+        "name": "Cheesy Veggie",
+        "description": "Mozzarella, Extra Mushrooms, Sweet Peppers, Onions, Black Olives"
       },
       {
-        "img": "../images/rPapa-Ronny-g-e1594031058169.png",
-        "name": "Pappa Muko",
-        "description": "Pepperoni,Mozzarella and Marinara Sauce"
+        "img": "../images/rSmokin-g-e1594030835507.png",
+        "name": "Smokin’",
+        "description": "Mozzarella, Smoked Cheese, Grilled Chicken, Fresh Tomato and Marinara Sauce"
       },
       {
-        "img": "../images/rPapa-Ronny-g-e1594031058169.png",
-        "name": "Pappa Muko",
-        "description": "Pepperoni,Mozzarella and Marinara Sauce"
+        "img": "../images/rCruiser-g-e1594030876565.png",
+        "name": "Cruiser",
+        "description": "Mozzarella, Pepperoni, Mushrooms, Black Olives and Marinara Sauce"
       },
       {
-        "img": "../images/rPapa-Ronny-g-e1594031058169.png",
-        "name": "Pappa Muko",
-        "description": "Pepperoni,Mozzarella and Marinara Sauce"
-      },
-      {
-        "img": "../images/rPapa-Ronny-g-e1594031058169.png",
-        "name": "Pappa Muko",
-        "description": "Pepperoni,Mozzarella and Marinara Sauce"
-      },
-      {
-        "img": "../images/rPapa-Ronny-g-e1594031058169.png",
-        "name": "Pappa Muko",
-        "description": "Pepperoni,Mozzarella and Marinara Sauce"
+        "img": "../images/rHula-g-e1594030984116.png",
+        "name": "Hula",
+        "description": "Mozzarella, Smoked Ham, Sweet Pineapple and Marinara Sauce"
       }
     ]
 }
