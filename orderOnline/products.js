@@ -11,7 +11,7 @@ xhr.onload = function () {
         newContent += '<article class="order-online-product">';
         newContent += '<figure class="order-online-product-figure">';
         newContent += '<img src="' + responseObject.products[i].img + '" />';
-        newContent += '<figcaption>' + '<p class=order-online-product-name>' + responseObject.products[i].name + '</p>' + responseObject.products[i].description + '</figcaption>';
+        newContent += '<figcaption>' + '<p class=order-online-product-name>' + responseObject.products[i].name + '</p>' + '<p class=order-online-product-description>' + responseObject.products[i].description + '</p>' + '</figcaption>';
         newContent += '</figure>';
         newContent += '<button class="order-online-product-add-card">' + 'Add to card' + '</button>';
         newContent += '</article>';

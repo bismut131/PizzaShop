@@ -25,9 +25,9 @@
 
 .order-online-product {
     padding: 1rem;
-    margin: 1rem;
+    margin: 2rem;
     text-align: center;
-    width: 27rem;
+    width: 21rem;
 }
 
 .order-online-product:hover,
@@ -37,8 +37,8 @@
 }
 
 .order-online-product-figure {
-    width: 70%;
-    height: 70%;
+    width: 80%;
+    height: 80%;
     margin: auto;
 }
 
@@ -50,7 +50,11 @@
 
 .order-online-product-name {
     font-weight: 700;
-    height: 3rem;
+    height: 2rem;
+}
+
+.order-online-product-description {
+    height: 4rem;
 }
 
 .order-online-product-add-card {
