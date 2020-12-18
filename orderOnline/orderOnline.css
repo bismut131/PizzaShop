@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+#order-online {
+    padding: 2rem;
+}
+
+.order-online-products {
+    width: 100%;
+    height: 100%;
+    max-width: 100rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+.order-online-product {
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    width: 27rem;
+}
+
+.order-online-product:hover,
+.order-online-product:active {
+    border: 2px solid rgb(58, 56, 56);
+    border-radius: 1rem;
+}
+
+.order-online-product-figure {
+    width: 70%;
+    height: 70%;
+    margin: auto;
+}
+
+.order-online-product img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.order-online-product-name {
+    font-weight: 700;
+    height: 3rem;
+}
+
+.order-online-product-add-card {
+    background-color: rgb(58, 56, 56);
+    color: white;
+    border-radius: 1rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-family: "Anton";
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+.order-online-product-add-card:hover,
+.order-online-product-add-card:active {
+    background-color: white;
+    color: rgb(58, 56, 56);
+}
+
+
+

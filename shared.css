@@ -150,7 +150,7 @@ main {
     color: white;
 }
 
-@media (min-width: 42.5rem) {
+@media (min-width: 43rem) {
     .main-header{
         justify-content: center;
         padding: 1rem 1.5rem;
@@ -163,17 +163,15 @@ main {
     .main-nav {
         display: flex;
     }
-
     .main-footer__first-section {
         display: flex;
         margin: 1rem auto;
         flex-direction: row;
         justify-content: space-between;
-        width: 40%;
+        max-width: 45rem;
     }
 
     .main-footer__info {
         text-align: left;
     }
-    
 }

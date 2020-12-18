@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PIZZA SHOP</title>
-    <link rel="shortcut icon" href="images/pizza_icon_126037.png">
-    <link rel="stylesheet" href="shared.css">
-    <link rel="stylesheet" href="home.css">
+    <link rel="shortcut icon" href="../images/pizza_icon_126037.png">
+    <link rel="stylesheet" href="../shared.css">
+    <link rel="stylesheet" href="orderOnline.css">
 </head>
 
 <body>
@@ -23,10 +23,10 @@
             <nav class="main-nav">
                 <ul class="main-nav__items">
                     <li class="main-nav__item">
-                        <a href="#home">HOME</a>
+                        <a href="../index.html">HOME</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="orderOnline/index.html">Order Online</a>
+                        <a href="#order-online">Order Online</a>
                     </li>
                     <li class="main-nav__item">
                         <a href="">Menu</a>
@@ -43,10 +43,10 @@
         <nav class="mobile-nav">
             <ul class="mobile-nav__items">
                 <li class="mobile-nav__item">
-                    <a href="#home">HOME</a>
+                    <a href="../index.html">HOME</a>
                 </li>
                 <li class="mobile-nav__item">
-                    <a href="orderOnline/index.html">Order Online</a>
+                    <a href="#order-online">Order Online</a>
                 </li>
                 <li class="mobile-nav__item">
                     <a href="">Menu</a>
@@ -59,14 +59,15 @@
                 </li>
             </ul>
         </nav>
-        <main id="home">
-            <section>
-                <div class="title">
-                    <h1>The</h1>
-                    <h1>PIZZA SHOP</h1>
-                    <h3>TAKEOUT & DELIVERY</h3>
-                </div>
-                <button class="order">Order Now</button>
+        <main id="order-online">
+            <section class="order-online-products">
+                <!-- <article class="order-online-product">
+                    <figure class="order-online-product-figure">
+                        <img src="../images/rPapa-Ronny-g-e1594031058169.png" alt="pizza">
+                        <figcaption>Pepperoni, mozarela and marinca sauce</figcaption>
+                    </figure>
+                    <button class="order-online-product-add-card">Add to card</button>
+                </article> -->
             </section>
         </main>
         <footer class="main-footer">
@@ -85,16 +86,18 @@
                     </p>
                 </article>
                 <article id="loaction-hours" class="main-footer__location-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.5593770213322!2d41.62487931583577!3d41.64365467924144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40678612dccea6b1%3A0x121d9feefed23ba7!2s123%20Vakhtang%20Gorgasali%20St%2C%20Batumi%206010!5e0!3m2!1sen!2sge!4v1608143332914!5m2!1sen!2sge" 
-                    max-width="600" max-height="450" frameborder="0" style="border:0;" 
-                    allowfullscreen="" aria-hidden="false" tabindex="0">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.5593770213322!2d41.62487931583577!3d41.64365467924144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40678612dccea6b1%3A0x121d9feefed23ba7!2s123%20Vakhtang%20Gorgasali%20St%2C%20Batumi%206010!5e0!3m2!1sen!2sge!4v1608143332914!5m2!1sen!2sge"
+                        max-width="600" max-height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0">
                     </iframe>
                 </article>
             </section>
         </footer>
     </div>
-    <script src="jquery-1.11.0.js"></script>
-    <script src="shared.js"></script>
+    <script src="../jquery-1.11.0.js"></script>
+    <script src="../shared.js"></script>
+    <script src="products.js"></script>
 </body>
 
 </html>

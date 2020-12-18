@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 #home { 
     background-image: url("images/pizza_background.jpg");
     background-position: 50% 80%;
