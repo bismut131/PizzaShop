@@ -71,6 +71,53 @@ body {
     color:rgb(58, 56, 56);
 }
 
+.special-offer {
+    color: rgb(58, 56, 56);
+    width: auto;
+    height: auto;
+    max-width: 28rem;
+    margin: auto;
+    padding: 1rem;
+    border: 2px solid rgb(58, 56, 56);
+    border-radius: 2rem;
+}
+
+.special-offer-heading {
+    text-align: center;
+    font-family: "Anton";
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+}
+
+.special-offer-figure {
+    width: 70%;
+    height: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+.special-offer-figure img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+.special-offer-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.special-offer-old-price,
+.special-offer-new-price {
+    display: inline-block;
+}
+
+.special-offer-new-price {
+    font-weight: bold;
+}
+
+
+
 @media (min-width: 43rem) {
     .reservation-form {
         width: 30rem;
@@ -86,3 +133,4 @@ body {
     }
 
 }
+

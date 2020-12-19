@@ -1,0 +1,11 @@
+{
+	"specialProduct" :[
+		{
+			"img": "../images/rPapa-Ronny-g-e1594031058169.png",
+     	  	"name": "Pappa Muko",
+			"oldPrice" : "10$",
+			"newPrice": "7$",
+     	  	"description": "Pepperoni,Mozzarella and Marinara Sauce"
+		}
+	]
+}
