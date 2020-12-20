@@ -10,7 +10,7 @@
     background-size: cover;
     background-position: 50% 80%;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     margin: 0;
     padding: 1rem;
     text-align: center;
@@ -44,14 +44,14 @@
     font-size: 2rem;
     border-color: white;
     border-radius: 1.5rem;
-    font-family: "Anton";
+    font-family: "Anton", sans-serif;
     padding: 0.5rem 1rem;
     cursor: pointer;
 }
 
 .order-now:hover, .order-now:active {
     /* background-color: rgb(58, 56, 56); */
-    animation: moveup 0.4s ease-out forwards;
+    animation: moveup 0.6s ease-out forwards;
 }
 
 .order-now:focus {
@@ -62,6 +62,9 @@
     0% {
         transform: translateY(0);
     }
+    50% {
+        transform: translateY(-0.5rem);
+    }
     100% {
         transform: translateY(-0.3rem);
     }
@@ -70,4 +73,5 @@
 .order-now a {
     color: white;
     text-decoration: none;
+    font-family: "Pacifico";
 }
