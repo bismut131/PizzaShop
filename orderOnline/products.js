@@ -1,10 +1,10 @@
 
-var xhr1 = new XMLHttpRequest();
+var xhr = new XMLHttpRequest();
 
 
-xhr1.onload = function () {
+xhr.onload = function () {
     
-    responseObject = JSON.parse(xhr1.responseText);
+    responseObject = JSON.parse(xhr.responseText);
 
     var newContent = "";
     for (var i = 0; i < responseObject.products.length; i++) {
@@ -21,5 +21,5 @@ xhr1.onload = function () {
 
 }
 
-xhr1.open('GET', 'products.json', true);
-xhr1.send(null);
+xhr.open('GET', 'products.json', true);
+xhr.send(null);

@@ -73,9 +73,9 @@ body {
 
 .special-offer {
     color: rgb(58, 56, 56);
-    width: auto;
+    width: 90%;
     height: auto;
-    max-width: 28rem;
+    max-width: 30rem;
     margin: auto;
     padding: 1rem;
     border: 2px solid rgb(58, 56, 56);

@@ -7,6 +7,7 @@
 
 #home { 
     background-image: url("images/pizza_background.jpg");
+    background-size: cover;
     background-position: 50% 80%;
     height: 100vh;
     width: 100vw;
@@ -37,22 +38,23 @@
     font-size: 2.5rem;
 }
 
-.order {
+.order-now {
     color: white;
     background-color: transparent;
     font-size: 2rem;
     border-color: white;
+    border-radius: 1.5rem;
     font-family: "Anton";
     padding: 0.5rem 1rem;
     cursor: pointer;
 }
 
-.order:hover, .order:active {
+.order-now:hover, .order-now:active {
     /* background-color: rgb(58, 56, 56); */
     animation: moveup 0.4s ease-out forwards;
 }
 
-.order:focus {
+.order-now:focus {
     outline:none;
 }
 
@@ -63,4 +65,9 @@
     100% {
         transform: translateY(-0.3rem);
     }
+}
+
+.order-now a {
+    color: white;
+    text-decoration: none;
 }

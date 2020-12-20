@@ -1,8 +1,8 @@
-var xhr2 = new XMLHttpRequest;
+var xhr = new XMLHttpRequest;
 
-xhr2.onload = function () {
+xhr.onload = function () {
 
-    var responseObject = JSON.parse(xhr2.responseText);
+    var responseObject = JSON.parse(xhr.responseText);
 
     var newContent = `<figure class="special-offer-figure">
         <img src="${responseObject.specialProduct[0].img}" alt="Pizza">
@@ -18,5 +18,5 @@ xhr2.onload = function () {
 
 }
 
-xhr2.open('GET','specialOffer.json',true)
-xhr2.send(null);
+xhr.open('GET','specialOffer.json',true)
+xhr.send(null);
