@@ -7,3 +7,15 @@
         else $mobileNav.addClass("open");
     })
 
+    var $shoppingCartIcon = $('.shopping-cart-icon-img');
+    var $exitIcon = $('.exit-icon-img');
+    var $shoppingCart = $('.shopping-cart');
+
+    $shoppingCartIcon.click(function() {
+        $shoppingCart.addClass("open");
+    })
+
+    $exitIcon.click(function () {
+        $shoppingCart.removeClass("open");
+    })
+
