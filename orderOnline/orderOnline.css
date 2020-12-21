@@ -53,6 +53,7 @@
     font-family: "Anton";
     padding: 0.5rem;
     margin: 1rem;
+    outline: none;
 }
 
 .order-online-product-add-card:hover,
@@ -60,8 +61,6 @@
     background-color: white;
     color: rgb(58, 56, 56);
 }
-
-.order-online
 
 
 

@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
-* {
-    box-sizing: border-box;
-}
-
 body {
     font-family: "Montserrat", sans-serif;
     margin: 0;
@@ -85,6 +81,12 @@ main {
     border-bottom: 3px solid white;
 }
 
+.shopping-card-icon img {
+    width: 2rem;
+    height: 2rem;
+    object-fit: contain;
+}
+
 .mobile-nav {
     display: none;
     position: fixed;
@@ -106,14 +108,92 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
 }
 
 .mobile-nav__item {
     margin: 2rem 0;
 }
 
+.shopping-card {
+    display: none;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    position: fixed;
+    z-index: 101;
+    right: -1rem;
+    top: 0;
+    background-color: rgb(58, 56, 56);
+    width: 80%;
+    height: 100%;
+    padding-top: 4rem;
+    color: white;
+    overflow-y: scroll;
+    
+}
+
+.shopping-card-product {
+    width: 80%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 1rem ;
+}
+
+.shopping-card-product img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.shopping-card-product-name {
+    font-weight: bold;
+}
+
+#shopping-card-product-quantity {
+    width: 2.5rem;
+    height: 2rem;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    background-color: rgb(58, 56, 56);
+    color: white;
+}
+
+.remove {
+    font-family: "Montserrat", sans-serif;
+    margin: 1rem;
+    width: 5rem;
+    height: 2rem;
+    font-size: 1rem;
+    background-color: rgb(58, 56, 56);
+    color: white;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+}
+
+.remove:hover,
+.remove:active {
+    background-color: white;
+    color: rgb(58, 56, 56);
+    outline: none;
+}
+
+@media (min-width: 43rem) {
+    .shopping-card-product{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
 .open {
     display: block;
+}
+
+.openflex {
+    display: flex;
 }
 
 .main-footer {
