@@ -12,15 +12,6 @@
 </head>
 
 <body>
-    <div class="backdrop"></div>
-    <section class="shopping-cart">
-        <div class="exit-icon">
-            <img src="../images/close-icon.png" class="exit-icon-img" alt="close icon">
-        </div>
-    </section>
-    <section class="shopping-cart-products">
-
-    </section>
     <div class="grid-container">
         <header class="main-header">
             <button class="toggle-button">
@@ -44,9 +35,6 @@
                     </li>
                 </ul>
             </nav>
-            <div class="shopping-cart-icon">
-                <img src="../images/shoppint-cart-icon.png" class="shopping-cart-icon-img" alt="shopping-cart icon">
-            </div>
         </header>
         <nav class="mobile-nav">
             <ul class="mobile-nav__items">
@@ -72,7 +60,7 @@
                 <label for="time">Time</label>
                 <input type="time" name="time" id="time">
                 <label for="part-size">Party-size</label>
-                <input type="number" name="party-size" id="party-size">
+                <input type="number" name="party-size" min="1" id="party-size">
                 <input type="submit" value="Book Now" id="reservation-submit">
             </form>
             <article class="special-offer">
