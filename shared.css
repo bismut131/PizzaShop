@@ -117,9 +117,6 @@ main {
 
 .shopping-card {
     display: none;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
     position: fixed;
     z-index: 101;
     right: -1rem;
@@ -136,7 +133,9 @@ main {
 .shopping-card-product {
     width: 80%;
     padding: 1rem;
+    margin: 1rem auto;
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
     align-items: center;
     border: 1px solid white;
@@ -152,7 +151,7 @@ main {
     font-weight: bold;
 }
 
-#shopping-card-product-quantity {
+.shopping-card-product-quantity {
     width: 2.5rem;
     height: 2rem;
     text-align: center;
@@ -160,6 +159,18 @@ main {
     border-radius: 0.5rem;
     background-color: rgb(58, 56, 56);
     color: white;
+    outline: none;
+}
+
+.shopping-card-total {
+    position: relative;
+    text-align: center;
+    left:-2rem;
+}
+
+.shopping-card-total-title,
+.shopping-card-total-value {
+    display: inline-block;
 }
 
 .remove {
@@ -190,10 +201,6 @@ main {
 
 .open {
     display: block;
-}
-
-.openflex {
-    display: flex;
 }
 
 .main-footer {

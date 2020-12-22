@@ -57,13 +57,33 @@
             </ul>
         </nav>
         <section class="shopping-card">
-            <article class="shopping-card-product">
-                <img src="../images/rCruiser-g-e1594030876565.png" alt="pizza">
-                <p class="shopping-card-product-name">Pappa Muko</p>
-                <p class="shopping-card-product-price">10$</p>
-                <input type="number" id="shopping-card-product-quantity" min="1">
-                <button class="remove">Remove</button>
-            </article>
+            <div class="shopping-card-items">
+                <article class="shopping-card-product">
+                    <img src="../images/rCruiser-g-e1594030876565.png" alt="pizza">
+                    <p class="shopping-card-product-name">Pappa Muko</p>
+                    <p class="shopping-card-product-price">10$</p>
+                    <input type="number" class="shopping-card-product-quantity" value="1" min="1">
+                    <button class="remove">Remove</button>
+                </article>
+                <article class="shopping-card-product">
+                    <img src="../images/rCruiser-g-e1594030876565.png" alt="pizza">
+                    <p class="shopping-card-product-name">Pappa Muko</p>
+                    <p class="shopping-card-product-price">11$</p>
+                    <input type="number" class="shopping-card-product-quantity" value="1" min="1">
+                    <button class="remove">Remove</button>
+                </article>
+                <article class="shopping-card-product">
+                    <img src="../images/rCruiser-g-e1594030876565.png" alt="pizza">
+                    <p class="shopping-card-product-name">Pappa Muko</p>
+                    <p class="shopping-card-product-price">12$</p>
+                    <input type="number" class="shopping-card-product-quantity" value="1" min="1">
+                    <button class="remove">Remove</button>
+                </article>
+            </div>
+            <div class="shopping-card-total">
+                <h1 class="shopping-card-total-title">Total:</h1>
+                <h1 class="shopping-card-total-value">$0</h1>
+            </div>
         </section>
         <main id="order-online">
             <section class="order-online-products">
@@ -103,6 +123,7 @@
     </div>
     <script src="../jquery-1.11.0.js"></script>
     <script src="../shared.js"></script>
+    <script src="shopping_cart.js"></script>
 </body>
 
 </html>

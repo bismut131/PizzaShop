@@ -8,15 +8,15 @@ $button.click(function () {
         $mobileNav.removeClass("open");
     else {
         $mobileNav.addClass("open");
-        $shoppingCard.removeClass("openflex");
+        $shoppingCard.removeClass("open");
     }
 })
 
 $shoppingCardIcon.click(function () {
-    if($shoppingCard.hasClass("openflex"))
-        $shoppingCard.removeClass("openflex");
+    if($shoppingCard.hasClass("open"))
+        $shoppingCard.removeClass("open");
     else {
-        $shoppingCard.addClass("openflex");
+        $shoppingCard.addClass("open");
         $mobileNav.removeClass("open");
     }
 })
