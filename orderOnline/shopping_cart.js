@@ -28,28 +28,33 @@ function addItem(e) {
 
     cart.append(itemArticle);
     updateCartTotal();
+    remove();
+    updateQuantity();
 }
 
 // removing item form the list through button.remove
-var Button = $(".remove");
+function remove() {
 
-Button.click(function (event) {
-    var $removeButton = $(event.target);
-    var $product = $removeButton.parent();
-    $product.remove();
-    updateCartTotal();
-    console.log("YES");
-})
+    var Button = $(".remove");
 
+    Button.click(function (event) {
+        var $removeButton = $(event.target);
+        var $product = $removeButton.parent();
+        $product.remove();
+        updateCartTotal();
+        console.log("YES");
+    })
 
-
-// update total on quantity change 
-var quantity = document.getElementsByClassName('shopping-card-product-quantity');
-
-for (var i = 0; i < quantity.length; i++) {
-    quantity[i].addEventListener("change", updateCartTotal);
 }
 
+// update total on quantity change 
+function updateQuantity() {
+    var quantity = document.getElementsByClassName('shopping-card-product-quantity');
+
+    for (var i = 0; i < quantity.length; i++) {
+        quantity[i].addEventListener("change", updateCartTotal);
+    }
+}
 
 //update totla price after removeing/adding product 
 function updateCartTotal() {
