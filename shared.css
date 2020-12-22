@@ -163,14 +163,17 @@ main {
 }
 
 .shopping-card-total {
-    position: relative;
+    width: 80%;
+    margin: auto;
     text-align: center;
-    left:-2rem;
+    position: relative;
+    left: -2.5rem;
 }
 
 .shopping-card-total-title,
 .shopping-card-total-value {
     display: inline-block;
+    margin: 0.2rem;
 }
 
 .remove {
@@ -190,13 +193,6 @@ main {
     background-color: white;
     color: rgb(58, 56, 56);
     outline: none;
-}
-
-@media (min-width: 43rem) {
-    .shopping-card-product{
-        flex-direction: row;
-        justify-content: space-between;
-    }
 }
 
 .open {
@@ -267,5 +263,20 @@ main {
 
     .main-footer__info {
         text-align: left;
+    }
+}
+
+@media (min-width: 43rem) {
+    .shopping-card {
+        width: 65%;
+        height: 100%;
+    }
+    .shopping-card-product {
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        justify-items: center;
+    }
+    .shopping-card-product-name {
+        justify-self: start;
     }
 }
