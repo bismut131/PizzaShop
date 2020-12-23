@@ -124,6 +124,7 @@ main {
     background-color: rgb(58, 56, 56);
     width: 80%;
     height: 100%;
+    max-width: 53rem;
     padding-top: 4rem;
     color: white;
     overflow-y: scroll;

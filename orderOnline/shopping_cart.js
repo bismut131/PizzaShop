@@ -6,6 +6,12 @@ for (var i = 0; i < addButton.length; i++) {
     addButton[i].addEventListener('click', addItem);
 }
 
+//after clicking on shopping bag icon get products from local storage (saved after refreshing)
+var shoppingBagIcon = document.getElementsByClassName("shopping-card-icon")[0];
+shoppingBagIcon.addEventListener("click", getFromLocalStorage)
+
+
+
 function addItem(e) {
     var addButton = e.target;
     var products = addButton.parentNode;
@@ -24,16 +30,15 @@ function addItem(e) {
     var itemArticle = document.createElement('article');
     itemArticle.classList.add('shopping-card-product');
     itemArticle.innerHTML = itemContent;
-
-
     cart.append(itemArticle);
+
     updateCartTotal();
-    remove();
+    removeProduct();
     updateQuantity();
 }
 
 // removing item form the list through button.remove
-function remove() {
+function removeProduct() {
 
     var Button = $(".remove");
 
@@ -42,9 +47,8 @@ function remove() {
         var $product = $removeButton.parent();
         $product.remove();
         updateCartTotal();
-        console.log("YES");
+        saveToLocalStorage();
     })
-
 }
 
 // update total on quantity change 
@@ -56,8 +60,11 @@ function updateQuantity() {
     }
 }
 
-//update totla price after removeing/adding product 
+//update totla price after removeing/adding product or quantity change
 function updateCartTotal() {
+
+    console.log('removeupdate');
+
     var product = document.getElementsByClassName('shopping-card-product');
     var total = document.getElementsByClassName('shopping-card-total-value')[0];
 
@@ -67,8 +74,25 @@ function updateCartTotal() {
         var quantity = product[i].getElementsByClassName('shopping-card-product-quantity')[0];
         var price = parseFloat(price.textContent);
         sum += price * quantity.value;
+        quantity.setAttribute("value", quantity.value); // update value attribute for input also becuase after refresch it returns to it and we need new value not the old one.
     }
 
     sum = "$" + sum;
     total.textContent = sum;
+
+    saveToLocalStorage(); // we use function update there by every event, so after triggering any event, html is saved 
+}
+
+//save changes to local storage
+function saveToLocalStorage() {
+    var shoppingBag = document.getElementsByClassName("shopping-card")[0].innerHTML;
+    localStorage.setItem("shoppingBag", shoppingBag)
+}
+
+// get products from local storage
+function getFromLocalStorage () {
+    var shoppingBag = document.getElementsByClassName("shopping-card")[0];
+    shoppingBag.innerHTML = localStorage.getItem("shoppingBag");
+    removeProduct();
+    updateQuantity();
 }
