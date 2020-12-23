@@ -20,6 +20,18 @@ function addItem(e) {
     var productName = products.getElementsByClassName("order-online-product-name")[0].textContent;
     var productPrice = products.getElementsByClassName("order-online-product-price")[0].textContent;
 
+    //check if item is already in the shopping bag and change just qunatity
+    var shoppingBagProductName = document.getElementsByClassName("shopping-card-product-name");
+    var shoppingBagProductQuantity = document.getElementsByClassName("shopping-card-product-quantity");
+    for(var i = 0; i < shoppingBagProductName.length; i++){
+        if(shoppingBagProductName[i].textContent == productName) {
+            shoppingBagProductQuantity[i].value = parseFloat(shoppingBagProductQuantity[i].value) + 1;
+            updateCartTotal();
+            return;
+        }
+    }
+    // return because we should not add new item just add to quantity
+
     var cart = document.getElementsByClassName("shopping-card-items")[0];
     var itemContent = `<img src="${imgSrc}" alt="pizza">
                         <p class="shopping-card-product-name">${productName}</p>
@@ -72,13 +84,13 @@ function updateCartTotal() {
         var quantity = product[i].getElementsByClassName('shopping-card-product-quantity')[0];
         var price = parseFloat(price.textContent);
         sum += price * quantity.value;
-        quantity.setAttribute("value", quantity.value); // update value attribute for input also becuase after refresch it returns to it and we need new value not the old one.
+        quantity.setAttribute("value", quantity.value); // update value attribute for input also becuase after refresh it returns to it and we need new value not the old one.
     }
 
     sum = "$" + sum;
     total.textContent = sum;
 
-    saveToLocalStorage(); // we use function update there by every event, so after triggering any event, html is saved 
+    saveToLocalStorage(); // we use function update by every event, so after triggering any event, html is saved 
 }
 
 //save changes to local storage
