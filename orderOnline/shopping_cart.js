@@ -63,8 +63,6 @@ function updateQuantity() {
 //update totla price after removeing/adding product or quantity change
 function updateCartTotal() {
 
-    console.log('removeupdate');
-
     var product = document.getElementsByClassName('shopping-card-product');
     var total = document.getElementsByClassName('shopping-card-total-value')[0];
 
