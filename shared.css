@@ -82,10 +82,19 @@ main {
 }
 
 .shopping-card-icon img {
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     object-fit: contain;
     cursor: pointer;
+    padding-top: 0.35rem;
+    padding-left: 0.1rem;
+    text-align: center;
+}
+
+.shopping-card-icon:active,
+.shopping-card-icon:hover {
+    border: 2px solid white;
+    border-radius: 50%;
 }
 
 .mobile-nav {
